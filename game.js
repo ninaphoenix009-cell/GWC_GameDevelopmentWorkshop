@@ -49,7 +49,6 @@ function preload() {
     this.load.image('star', 'https://labs.phaser.io/assets/sprites/star.png');
     this.load.image('asteroid', 'https://labs.phaser.io/assets/sprites/purple_ball.png');
 }
-
 // ========================================
 // CREATE - Setup the Game
 // ========================================
@@ -137,7 +136,6 @@ function create() {
     this.physics.add.overlap(player, stars, collectStar, null, this);
     this.physics.add.overlap(player, asteroids, hitAsteroid, null, this);
 }
-
 // ========================================
 // SPAWN STAR
 // ========================================
@@ -149,7 +147,6 @@ function spawnStar() {
     star.setScale(0.8);
     star.setVelocityY(280);
 }
-
 // ========================================
 // SPAWN ASTEROID
 // ========================================
@@ -164,7 +161,6 @@ function spawnAsteroid() {
     // Make asteroids spin
     asteroid.setAngularVelocity(100);
 }
-
 // ========================================
 // COLLECT STAR
 // ========================================
