@@ -190,7 +190,6 @@ function collectStar(player, star) {
         showWinScreen.call(this);
     }
 }
-
 // ========================================
 // HIT ASTEROID - Game Over
 // ========================================
@@ -201,7 +200,6 @@ function hitAsteroid(player, asteroid) {
     
     showGameOver.call(this);
 }
-
 // ========================================
 // WIN SCREEN
 // ========================================
@@ -253,7 +251,6 @@ function showWinScreen() {
         playAgainButton.setStyle({ backgroundColor: '#4CAF50' });
     });
 }
-
 // ========================================
 // GAME OVER SCREEN
 // ========================================
@@ -303,7 +300,6 @@ function showGameOver() {
         playAgainButton.setStyle({ backgroundColor: '#4CAF50' });
     });
 }
-
 // ========================================
 // UPDATE - Runs Every Frame
 // ========================================
@@ -333,13 +329,6 @@ function update() {
         if (asteroid.y > gameHeight + 20) asteroid.destroy();
     });
 }
-
-// ========================================
-// START THE GAME
-// ========================================
-const game = new Phaser.Game(config);
-
-
 // ========================================
 // START THE GAME
 // ========================================
